@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+
+<body id="grad1">
+
+    <div style="text-align:center">
+        <h1>Image Gallery</h2>
+            <h2>Click on the images below:</p>
+                <button onclick="buttonColor()" ondblclick="dblclick()" id="button">Change button color</button>
+    </div>
+
+
+    <div class="row">
+        <div class="column">
+            <img src="Images/image1.jpg" alt="image 1" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Images/image2.jpg" alt="image 2" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Images/image3.jpg" alt="image 3" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Images/image4.jpg" alt="image 4" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Images/image5.jpg" alt="image 5" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Images/image6.jpg" alt="image 6" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Images/image7.jpg" alt="image 7" style="width:105%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Images/image8.jpg" alt="image 8" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Images/image9.jpg" alt="image 9" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
